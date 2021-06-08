@@ -35,12 +35,24 @@
             </li>
           </ul>
         </nav>
-        <a class="nav-item item-hover" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
-        >
-        <a class="nav-item item-hover" href="tel:+380961111111"
-          >+38 096 111 11 11</a
-        >
+        <ul class="header-item-holder">
+          <li class="header-item-link">
+            <a class="nav-item item-hover" href="mailto:info@devstudio.com">
+              <svg class="nav-icon" width="16" height="12">
+                <use href="./image/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-item-link">
+            <a class="nav-item item-hover" href="tel:+380961111111">
+              <svg class="nav-icon" width="10" height="16">
+                <use href="./image/icons.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -192,18 +204,53 @@
 
     <footer class="footer">
       <div class="conteiner">
-        <a class="logo-ftr item-hover" href="./index.html"
-          ><span>Web</span>Studio</a
-        >
-        <address>
-          <p class="contact-ftr">г. Киев, пр-т Леси Украинки, 26</p>
-          <a class="link-ftr item-hover" href="mailto:info@example.com"
-            >+info@example.com</a
+        <div class="ftr-cont">
+          <a class="logo-ftr item-hover" href="./index.html"
+            ><span>Web</span>Studio</a
           >
-          <a class="link-ftr item-hover" href="tel:+380991111111"
-            >+38 099 111 11 11</a
-          >
-        </address>
+          <address class="address">
+            <p class="contact-ftr">г. Киев, пр-т Леси Украинки, 26</p>
+            <a class="link-ftr item-hover" href="mailto:info@example.com"
+              >+info@example.com</a
+            >
+            <a class="link-ftr item-hover" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </address>
+        </div>
+        <div class="social">
+          <p class="social-text">Присойдиняйтесь</p>
+          <ul class="social-link-holder">
+            <li class="social-link-list">
+              <a href="#" class="social-link">
+                <svg class="social-link-icon">
+                  <use href="./image/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-list">
+              <a href="#" class="social-link">
+                <svg class="social-link-icon">
+                  <use href="./image/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-list">
+              <a href="#" class="social-link">
+                <svg class="social-link-icon">
+                  <use href="./image/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-link-list">
+              <a href="#" class="social-link">
+                <svg class="social-link-icon">
+                  <use href="./image/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

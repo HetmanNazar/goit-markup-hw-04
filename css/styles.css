@@ -30,7 +30,7 @@ li {
 
 .nav {
   display: inline-block;
-  margin-right: 175px;
+  margin-right: 180px;
 }
 .logo {
   font-size: 26px;
@@ -66,8 +66,15 @@ span {
 .item-hover:hover,
 .item-hover:focus {
   color: var(--accent-color);
+  fill: #2196f3;
 }
-
+.header-item-holder {
+  display: inline-block;
+}
+.header-item-link {
+  display: inline-block;
+  margin-left: 50px;
+}
 .nav-item {
   font-weight: 500;
   font-size: 14px;
@@ -80,9 +87,12 @@ span {
 }
 
 .nav-icon {
-  fill: #2f303a;
+  fill: #757575;
+  margin-right: 10px;
 }
-.nav-item:hover > .nav-icon {
+
+.nav-item:hover > .nav-icon,
+.nav-item:focus > .nav-icon {
   fill: #2196f3;
 }
 .service {
@@ -258,15 +268,14 @@ span {
 .team-link:hover,
 .team-link:focus {
   background-color: #2196f3;
+  fill: #fff;
 }
 
 .team-link-icon {
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
-.team-link-list:hover .team-link-icon,
-.team-link-list:focus .team-link-icon {
+.team-link:hover .team-link-icon,
+.team-link:focus .team-link-icon {
   fill: #fff;
 }
 .clients {
@@ -293,6 +302,8 @@ span {
   align-items: center;
   justify-content: center;
 }
+.clients-links {
+}
 .clients-link-icon {
   border: 1px solid #afb1b8;
   fill: #afb1b8;
@@ -302,8 +313,8 @@ span {
   border-radius: 4px;
 }
 
-.clients-link-list:hover .clients-link-icon,
-.clients-link-list:focus .clients-link-icon {
+.clients-link:hover .clients-link-icon,
+.clients-link:focus .clients-link-icon {
   fill: #2196f3;
   border: 1px solid #2196f3;
 }
@@ -311,6 +322,9 @@ span {
 .footer {
   background: #2f303a;
   padding: 60px 0;
+}
+.footer > .conteiner {
+  display: flex;
 }
 .logo-ftr {
   display: inline-block;
@@ -323,6 +337,7 @@ span {
 }
 .ftr-cont {
   display: inline-block;
+  margin-right: 70px;
 }
 .contact-ftr {
   font-style: normal;
@@ -343,7 +358,6 @@ span {
   margin-top: 9px;
 }
 .social {
-  display: inline-block;
 }
 .social-text {
   font-weight: 700;
@@ -400,14 +414,16 @@ span {
   background: #f5f4fa;
   cursor: pointer;
   padding: 6px 22px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   border-color: inherit;
+  border: 0;
 }
-.portfolio-btn:hover {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   color: var(--third-text-color);
   background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-card-holder {
@@ -421,10 +437,15 @@ span {
   display: inline-block;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-
+  cursor: pointer;
   margin-right: 30px;
   margin-bottom: 30px;
   text-align: left;
+}
+.portfolio-card-item:hover,
+.portfolio-card-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-card-item:nth-child(3n + 3) {
   margin-right: 0;
